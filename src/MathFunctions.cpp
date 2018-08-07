@@ -12,3 +12,8 @@ double power(double base, int exponent)
 
     return result;
 }
+
+int add(int num1, int num2)
+{
+    return num1 + num2;
+}

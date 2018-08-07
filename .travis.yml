@@ -7,4 +7,4 @@ script:
   - make test
 
 after_success:
-  - coveralls  --root . --include ./src -E ".*CMakeFiles.*"
+  - coveralls  --root . --include . --include ./src -E ".*CMakeFiles.*"

@@ -18,7 +18,7 @@ target_link_libraries(Demo MathFunctions)
 
 enable_testing()
 
-add_test (test_5_2 Demo 5 0)
+add_test (test_5_0 Demo 5 0)
 
 set_tests_properties (test_5_0
   PROPERTIES PASS_REGULAR_EXPRESSION "is 1")

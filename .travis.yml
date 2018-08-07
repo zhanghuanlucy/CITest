@@ -2,9 +2,9 @@ language: cpp
 before_install:
   - pip install --user cpp-coveralls
 script: 
-  - cmake --enable-gcov . 
+  - cmake -DCOVERAGE=1 . 
   - make 
   - make test
 
 after_success:
-  - coveralls  --root . -E ".*CMakeFiles.*" --gcov-options '\-lp'
+  - coveralls  --root . -E ".*CMakeFiles.*"

@@ -1,2 +1,10 @@
 language: cpp
-script: cmake . && make && make test
+before_install:
+  - pip install --user cpp-coveralls
+script: 
+  - cmake -DCOVERAGE=1 . 
+  -  make 
+  -  make test
+
+after_success:
+  - coveralls --root . -E ".*CMakeFiles.*"

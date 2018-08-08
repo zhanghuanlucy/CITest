@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "src/MathFunctions.h"
+#include "MathFunctions.h"
 
 int main(int argc, char *argv[])
 {
